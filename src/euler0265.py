@@ -1,10 +1,10 @@
 ###
 #
-# Created by Holden on 2/18/2016
+# Created by Holden on 4/16/2016
 #
 # 
 #
-# Problem 26 - Reciprical Cycles
+# Problem 265 - Binary Circles
 #
 ###
 
