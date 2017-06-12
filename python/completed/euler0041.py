@@ -2,7 +2,7 @@
 #
 # Created by Holden on 5/25/2017
 #
-# COMPLETED - 5/25/2017
+# COMPLETED on 5/25/2017
 #
 # Problem 41 - Pandigital prime
 #
@@ -21,6 +21,7 @@ def pandigital_primes(n):
 
     return -1
 
+# https://www.daniweb.com/programming/software-development/code/216880/check-if-a-number-is-a-prime-number-python
 def isprime(n):
     '''check if integer n is a prime'''
     # make sure n is a positive integer
