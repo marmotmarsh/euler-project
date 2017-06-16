@@ -23,7 +23,7 @@ import lib.EulerTime;
 
  */
 
-public class Prob0029 {
+public class euler0029 {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         int answer = distinctPowers(100, 100);

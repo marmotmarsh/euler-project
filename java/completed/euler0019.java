@@ -7,7 +7,7 @@ import lib.EulerTime;
  *
  */
 
-public class euler0019 {
+public class Prob0019 {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         int answer = countingSundays(1901, 2000);
