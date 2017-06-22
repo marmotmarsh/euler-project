@@ -14,3 +14,5 @@ def selfPowers(exp):
         total += (i ** i)
     
     return total
+
+print(selfPowers(1000))
