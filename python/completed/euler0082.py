@@ -2,15 +2,11 @@
 #
 # Created by Holden on 6/24/2016
 #
-#
+# COMPLETED on 6/24/2017
 #
 # Problem 82 - Path Sum: Three Ways
 #
 ###
-
-import sys
-
-sys.setrecursionlimit(10000)
 
 x82 = open("../data/x0082.txt", "r")
 
@@ -21,7 +17,6 @@ short = [[131, 201, 630, 537, 805],
          [18, 150, 111, 956, 331]]
 
 matrix = []
-
 for line in x82:
     matrix.append(list(map(int, line.strip().split(','))))
 
@@ -30,7 +25,7 @@ def path_sum_three_ways(array):
     starts = []
 
     for i in range(len(array)):
-        memo = [[-1 for j in range(len(array))] for i in range(len(array))]
+        memo = [[sum(array[j][:k+1]) for k in range(len(array))] for j in range(len(array))]
         find_min_path(memo, 0, i, 0, len(array)-1, array)
         starts.append(min([memo[x][-1] for x in range(len(array))]))
 
@@ -41,7 +36,7 @@ def find_min_path(memo, d, x, y, max_xy, array):
 
     d += array[x][y]
 
-    if memo[x][y] != -1 and memo[x][y] < d:
+    if memo[x][y] < d:
         return
 
     memo[x][y] = d
