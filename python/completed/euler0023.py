@@ -2,7 +2,7 @@
 #
 # Created by Holden on 12/18/2015
 #
-# 
+# COMPLETED on 10/17/17
 #
 # Problem 23 - Non-Abundant Sums
 #
