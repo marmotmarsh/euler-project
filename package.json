@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "promise.timeout": "^0.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
+  }
+}
