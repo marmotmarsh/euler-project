@@ -29,10 +29,3 @@ export async function solve12() {
   }
   return factorMap[n];
 }
-
-// function processData(input) {
-//   var tests = input.split('\n').map(Number).slice(1);
-//   var max = tests.slice().sort((a, b) => b - a)[0];
-//   var factorMap = solve12(max);
-//   tests.forEach((v) => console.log(factorMap[v]));
-// }

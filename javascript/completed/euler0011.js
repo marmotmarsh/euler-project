@@ -1,7 +1,7 @@
-import { parseFileAsMatrix } from '../util.js';
+import { parseFileAs2DArray } from '../util.js';
 
 export async function solve11() {
-  var grid = parseFileAsMatrix('./data/x0011.txt');
+  var grid = parseFileAs2DArray('./data/x0011.txt');
   var l = 4;
   var n = 20;
   var max = 0;

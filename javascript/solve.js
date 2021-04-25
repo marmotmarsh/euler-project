@@ -10,6 +10,7 @@ import { solve9 } from './completed/euler0009.js';
 import { solve10 } from './working/euler0010.js';
 import { solve11 } from './completed/euler0011.js';
 import { solve12 } from './completed/euler0012.js';
+import { solve13 } from './completed/euler0013.js';
 
 export const solutions = {
   1: solve1,
@@ -24,6 +25,14 @@ export const solutions = {
   10: solve10,
   11: solve11,
   12: solve12,
+  13: solve13,
+  14: undefined,
+  15: undefined,
+  16: undefined,
+  17: undefined,
+  18: undefined,
+  19: undefined,
+  20: undefined,
 };
 
 export async function solve(n) {

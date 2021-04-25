@@ -11,7 +11,15 @@ export function parseFileAsString(filename) {
   return fileStr;
 }
 
-export function parseFileAsMatrix(filename) {
+export function parseFileAs1DArray(filename) {
+  const file = fs.readFileSync(filename, {
+    encoding: 'utf-8',
+  });
+  const fileArr = file.split('\n');
+  return fileArr;
+}
+
+export function parseFileAs2DArray(filename) {
   const file = fs.readFileSync(filename, {
     encoding: 'utf-8',
   });
