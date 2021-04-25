@@ -9,7 +9,6 @@ export async function solve20() {
     .fill(0)
     .map((_v, i) => i + 1)
     .reduce((prod, v) => prod.multipliedBy(v), new BigNumber(1));
-  // console.log(prod.toString());
   return prod
     .toString()
     .replace('.', '')
