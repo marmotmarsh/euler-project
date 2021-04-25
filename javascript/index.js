@@ -1,11 +1,11 @@
-import { solve } from "./euler0001.js";
-import ptimeout from "promise.timeout";
+import ptimeout from 'promise.timeout';
+
+import { solve } from './solve.js';
 
 async function main() {
-  var result = await solve();
-  console.log(result);
-  return;
+  const n = process.argv[2];
+  solve(n);
 }
 
-var solution = ptimeout(main, 60000);
+const solution = ptimeout(main, 60000);
 solution();
