@@ -7,7 +7,8 @@ import { solve6 } from './completed/euler0006.js';
 import { solve7 } from './completed/euler0007.js';
 import { solve8 } from './completed/euler0008.js';
 import { solve9 } from './completed/euler0009.js';
-import { solve10 } from './completed/euler0010.js';
+import { solve10 } from './working/euler0010.js';
+import { solve11 } from './completed/euler0011.js';
 
 export const solutions = {
   1: solve1,
@@ -20,6 +21,7 @@ export const solutions = {
   8: solve8,
   9: solve9,
   10: solve10,
+  11: solve11,
 };
 
 export async function solve(n) {

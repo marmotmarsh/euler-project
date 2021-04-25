@@ -1,4 +1,4 @@
-import { parseFileToString } from '../util.js';
+import { parseFileAsString } from '../util.js';
 
 function multDigits(digits, k) {
   return digits.slice(digits.length - k).reduce((prod, n) => prod * n, 1);
@@ -6,7 +6,7 @@ function multDigits(digits, k) {
 
 export async function solve8() {
   var k = 13;
-  var n = parseFileToString('./data/x0008.txt');
+  var n = parseFileAsString('./data/x0008.txt');
   var digits = n
     .toString()
     .split('')
