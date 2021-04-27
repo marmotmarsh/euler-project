@@ -1,6 +1,6 @@
 import { solve1 } from './completed/euler0001.js';
 import { solve2 } from './completed/euler0002.js';
-import { solve3 } from './working/euler0003.js';
+import { solve3 } from './completed/euler0003.js';
 import { solve4 } from './completed/euler0004.js';
 import { solve5 } from './completed/euler0005.js';
 import { solve6 } from './completed/euler0006.js';
