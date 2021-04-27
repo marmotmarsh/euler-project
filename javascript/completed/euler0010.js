@@ -1,5 +1,3 @@
-import BigNumber from 'bignumber.js';
-
 export async function solve10() {
   var n = 2000000;
   var primes = [0, 2, 3];

@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "bignumber.js": "^9.0.1",
+    "lodash": "^4.17.21",
     "promise.timeout": "^0.4.2"
   },
   "devDependencies": {

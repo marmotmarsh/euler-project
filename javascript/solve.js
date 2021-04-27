@@ -7,7 +7,7 @@ import { solve6 } from './completed/euler0006.js';
 import { solve7 } from './completed/euler0007.js';
 import { solve8 } from './completed/euler0008.js';
 import { solve9 } from './completed/euler0009.js';
-import { solve10 } from './working/euler0010.js';
+import { solve10 } from './completed/euler0010.js';
 import { solve11 } from './completed/euler0011.js';
 import { solve12 } from './completed/euler0012.js';
 import { solve13 } from './completed/euler0013.js';
@@ -15,6 +15,8 @@ import { solve16 } from './completed/euler0016.js';
 import { solve17 } from './completed/euler0017.js';
 import { solve20 } from './completed/euler0020.js';
 import { solve22 } from './completed/euler0022.js';
+import { solve14 } from './completed/euler0014.js';
+import { solve15 } from './working/euler0015.js';
 
 export const solutions = {
   1: solve1,
@@ -30,8 +32,8 @@ export const solutions = {
   11: solve11,
   12: solve12,
   13: solve13,
-  14: undefined,
-  15: undefined,
+  14: solve14,
+  15: solve15,
   16: solve16,
   17: solve17,
   18: undefined,
