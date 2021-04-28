@@ -16,7 +16,7 @@ import { solve17 } from './completed/euler0017.js';
 import { solve20 } from './completed/euler0020.js';
 import { solve22 } from './completed/euler0022.js';
 import { solve14 } from './completed/euler0014.js';
-import { solve15 } from './working/euler0015.js';
+import { solve15 } from './completed/euler0015.js';
 
 export const solutions = {
   1: solve1,
@@ -45,7 +45,7 @@ export const solutions = {
 
 export async function solve(n) {
   if (!n) {
-    throw new Error('You must enter a problem numer');
+    throw new Error('You must enter a problem number');
   }
   const result = await solutions[n]();
   console.log(result);
