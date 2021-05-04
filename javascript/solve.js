@@ -16,9 +16,9 @@ import { solve15 } from './completed/euler0015.js';
 import { solve16 } from './completed/euler0016.js';
 import { solve17 } from './completed/euler0017.js';
 import { solve18 } from './completed/euler0018.js';
-import { solve19 } from './working/euler0019.js';
+import { solve19 } from './completed/euler0019.js';
 import { solve20 } from './completed/euler0020.js';
-import { solve21 } from './working/euler0021.js';
+import { solve21 } from './completed/euler0021.js';
 import { solve22 } from './completed/euler0022.js';
 
 export const solutions = {
