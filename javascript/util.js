@@ -1,5 +1,6 @@
 import fs from 'fs';
 import _ from 'lodash';
+import BigNumber from 'bignumber.js';
 
 export function parseFileAsString(filename) {
   const file = fs.readFileSync(filename, {
@@ -94,4 +95,16 @@ export function factorial(n) {
     p *= i;
   }
   return p;
+}
+
+export function fibonacci(n, memo = {}) {
+  if (n === 1 || n === 2) {
+    return new BigNumber(1);
+  }
+  if (!!memo[n]) {
+    return memo[n];
+  }
+  const sum = fibonacci(n - 1, memo).plus(fibonacci(n - 2, memo));
+  memo[n] = sum;
+  return sum;
 }
