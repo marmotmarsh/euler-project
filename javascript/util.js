@@ -108,3 +108,13 @@ export function fibonacci(n, memo = {}) {
   memo[n] = sum;
   return sum;
 }
+
+export function isPrime(n) {
+  if (n % 2 === 0) {
+    return false;
+  }
+  for (let i = 3; i < n / 2; i += 2) {
+    if (n % i === 0) return false;
+  }
+  return n > 1;
+}

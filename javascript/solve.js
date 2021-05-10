@@ -24,6 +24,7 @@ import { solve23 } from './completed/euler0023.js';
 import { solve24 } from './completed/euler0024.js';
 import { solve25 } from './completed/euler0025.js';
 import { solve26 } from './completed/euler0026.js';
+import { solve27 } from './completed/euler0027.js';
 
 export const solutions = {
   1: solve1,
@@ -52,7 +53,7 @@ export const solutions = {
   24: solve24,
   25: solve25,
   26: solve26,
-  27: undefined,
+  27: solve27,
   28: undefined,
   29: undefined,
   30: undefined,
