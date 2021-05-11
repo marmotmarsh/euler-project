@@ -118,3 +118,7 @@ export function isPrime(n) {
   }
   return n > 1;
 }
+
+export function findSum(values) {
+  return values.reduce((sum, v) => sum + v, 0);
+}
