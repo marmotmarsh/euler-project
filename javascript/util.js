@@ -130,3 +130,12 @@ export function permutations(str, start = '') {
   }
   return perms;
 }
+
+export function findGCD(a, b) {
+  return b ? findGCD(b, a % b) : a;
+}
+
+export function simplifyFraction(numerator, denominator) {
+  const gcd = findGCD(numerator, denominator);
+  return [numerator / gcd, denominator / gcd];
+}
