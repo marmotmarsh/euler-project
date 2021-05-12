@@ -75,10 +75,7 @@ export function findProperDivisors(n) {
     factor += factor === 2 ? 1 : 2;
   }
 
-  const primeDivisorMap = primeDivisors.reduce(
-    (accum, v) => ({ ...accum, [v]: (accum[v] || 0) + 1 }),
-    {}
-  );
+  const primeDivisorMap = primeDivisors.reduce((accum, v) => ({ ...accum, [v]: (accum[v] || 0) + 1 }), {});
 
   let divs = [1, ...findPrimeFactorComs(primeDivisorMap)];
   divs.sort((a, b) => a - b);
@@ -121,4 +118,15 @@ export function isPrime(n) {
 
 export function findSum(values) {
   return values.reduce((sum, v) => sum + v, 0);
+}
+
+export function permutations(str, start = '') {
+  if (str.length <= 1) {
+    return [start + str];
+  }
+  let perms = [];
+  for (let i = 0; i < str.length; i++) {
+    perms = [...perms, ...permutations(str.slice(0, i) + str.slice(i + 1), start + str[i])];
+  }
+  return perms;
 }
