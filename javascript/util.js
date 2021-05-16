@@ -131,6 +131,17 @@ export function permutations(str, start = '') {
   return perms;
 }
 
+export function combinations(length, vals, start = []) {
+  if (length <= 1) {
+    return vals.map((v) => [...start, v]);
+  }
+  let combs = [];
+  for (let i = 0; i < vals.length; i++) {
+    combs = [...combs, ...combinations(length - 1, vals.slice(i), [...start, vals[i]])];
+  }
+  return combs;
+}
+
 export function findGCD(a, b) {
   return b ? findGCD(b, a % b) : a;
 }
