@@ -33,6 +33,7 @@ import { solve32 } from './completed/euler0032.js';
 import { solve33 } from './completed/euler0033.js';
 import { solve34 } from './completed/euler0034.js';
 import { solve35 } from './completed/euler0035.js';
+import { solve36 } from './completed/euler0036.js';
 
 export const solutions = {
   1: solve1,
@@ -70,7 +71,7 @@ export const solutions = {
   33: solve33,
   34: solve34,
   35: solve35,
-  36: undefined,
+  36: solve36,
   37: undefined,
   38: undefined,
   39: undefined,

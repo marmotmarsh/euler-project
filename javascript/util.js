@@ -150,3 +150,7 @@ export function simplifyFraction(numerator, denominator) {
   const gcd = findGCD(numerator, denominator);
   return [numerator / gcd, denominator / gcd];
 }
+
+export function reverseString(s) {
+  return s.split('').reverse().join('');
+}
