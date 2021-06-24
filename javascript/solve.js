@@ -37,6 +37,7 @@ import { solve36 } from './completed/euler0036.js';
 import { solve37 } from './completed/euler0037.js';
 import { solve38 } from './completed/euler0038.js';
 import { solve39 } from './completed/euler0039.js';
+import { solve40 } from './completed/euler0040.js';
 
 export const solutions = {
   1: solve1,
@@ -78,7 +79,7 @@ export const solutions = {
   37: solve37,
   38: solve38,
   39: solve39,
-  40: undefined,
+  40: solve40,
 };
 
 export async function solve(n) {
