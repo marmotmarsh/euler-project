@@ -43,7 +43,9 @@ import { solve42 } from './completed/euler0042.js';
 import { solve43 } from './completed/euler0043.js';
 import { solve44 } from './completed/euler0044.js';
 import { solve45 } from './completed/euler0045.js';
-import { solve46 } from './working/euler0046.js';
+import { solve46 } from './completed/euler0046.js';
+import { solve47 } from './working/euler0047.js';
+import { solve48 } from './completed/euler0048.js';
 
 export const solutions = {
   1: solve1,
@@ -92,8 +94,8 @@ export const solutions = {
   44: solve44,
   45: solve45,
   46: solve46,
-  47: undefined,
-  48: undefined,
+  47: solve47,
+  48: solve48,
   49: undefined,
   50: undefined,
 };

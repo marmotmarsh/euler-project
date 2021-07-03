@@ -83,6 +83,29 @@ export function findProperDivisors(n) {
   return divs;
 }
 
+export function findPrimeFactors(n) {
+  if (n === 1) {
+    return {};
+  }
+  if (isPrime(n)) {
+    return { [n]: 1 };
+  }
+  let primes = {};
+  let num = n;
+  let factor = 2;
+  while (num > factor) {
+    if (isPrime(factor) && num % factor === 0) {
+      primes[factor] = 0;
+      while (num % factor === 0) {
+        num = num / factor;
+        primes[factor]++;
+      }
+    }
+    factor++;
+  }
+  return { ...primes, ...(num === 1 ? {} : { [num]: 1 }) };
+}
+
 export function factorial(n) {
   if (n === 0 || n === 1) {
     return 1;
@@ -107,7 +130,7 @@ export function fibonacci(n, memo = {}) {
 }
 
 export function isPrime(n) {
-  if (n % 2 === 0) {
+  if (n % 2 === 0 && n > 2) {
     return false;
   }
   for (let i = 3; i < n / 2; i += 2) {
