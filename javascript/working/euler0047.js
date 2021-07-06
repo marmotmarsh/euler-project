@@ -1,6 +1,10 @@
 import _ from 'lodash';
 import { findPrimeFactors, isPrime } from '../util.js';
 
+//
+// Currenttly works, except that it taks 2 minutes to finish.
+//
+
 function hasNFactors(base, n) {
   if (isPrime(base)) {
     return 1 === n;
@@ -46,8 +50,6 @@ export function solve47() {
   nums.sort();
 
   return nums[0];
-
-  // return findPrimeFactors(134039);
 }
 
 // solve47();
