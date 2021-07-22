@@ -52,6 +52,7 @@ import { solve51 } from './working/euler0051.js';
 import { solve52 } from './completed/euler0052.js';
 import { solve53 } from './completed/euler0053.js';
 import { solve54 } from './completed/euler0054.js';
+import { solve55 } from './working/euler0055.js';
 
 export const solutions = {
   1: solve1,
@@ -108,7 +109,7 @@ export const solutions = {
   52: solve52,
   53: solve53,
   54: solve54,
-  55: undefined,
+  55: solve55,
   56: undefined,
   57: undefined,
   58: undefined,
