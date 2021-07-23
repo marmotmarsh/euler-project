@@ -154,13 +154,13 @@ export function permutations(str, start = '') {
   return perms;
 }
 
-export function combinations(length, vals, start = []) {
+export function combinations(length, vals, unique = false, start = []) {
   if (length <= 1) {
     return vals.map((v) => [...start, v]);
   }
   let combs = [];
   for (let i = 0; i < vals.length; i++) {
-    combs = [...combs, ...combinations(length - 1, vals.slice(i), [...start, vals[i]])];
+    combs = [...combs, ...combinations(length - 1, vals.slice(i + (unique ? 1 : 0)), unique, [...start, vals[i]])];
   }
   return combs;
 }
