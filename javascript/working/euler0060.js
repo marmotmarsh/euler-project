@@ -71,5 +71,3 @@ export function solve60() {
   // return combinations(4, primePairingMap.get('227'), true);
   // return primePairingMap;
 }
-
-solve60();

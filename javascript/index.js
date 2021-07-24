@@ -1,6 +1,6 @@
 import { solve } from './solve.js';
 
-function main() {
+export function main() {
   const n = process.argv[2];
   const timerString = `Solving problem ${n}`;
 
