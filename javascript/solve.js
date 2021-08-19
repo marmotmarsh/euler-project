@@ -63,8 +63,12 @@ import { solve62 } from './completed/euler0062.js';
 import { solve63 } from './completed/euler0063.js';
 import { solve64 } from './completed/euler0064.js';
 import { solve65 } from './completed/euler0065.js';
+import { solve66 } from './working/euler0066.js';
 import { solve67 } from './completed/euler0067.js';
 import { solve68 } from './completed/euler0068.js';
+import { solve69 } from './working/euler0069.js';
+import { solve70 } from './working/euler0070.js';
+import { solve71 } from './completed/euler0071.js';
 import { solve79 } from './completed/euler0079.js';
 import { solve80 } from './working/euler0080.js';
 import { solve81 } from './completed/euler0081.js';
@@ -72,6 +76,7 @@ import { solve82 } from './completed/euler0082.js';
 import { solve83 } from './completed/euler0083.js';
 import { solve92 } from './completed/euler0092.js';
 import { solve97 } from './completed/euler0097.js';
+import { solve206 } from './working/euler0206.js';
 
 export const solutions = {
   1: solve1,
@@ -139,23 +144,32 @@ export const solutions = {
   63: solve63,
   64: solve64,
   65: solve65,
-  // 66
+  66: solve66,
   67: solve67,
   68: solve68,
-  // 69 => 78
+  69: solve69,
+  70: solve70,
+  71: solve71,
+  //
+  // 72 => 78
+  //
   79: solve79,
   80: solve80,
   81: solve81,
   82: solve82,
   83: solve83,
+  //
   // 84 => 91
+  //
   92: solve92,
+  //
   // 93 => 96
+  //
   97: solve97,
   //
   // 98 -> 205
   //
-  206: undefined,
+  206: solve206,
 };
 
 export function solve(n) {

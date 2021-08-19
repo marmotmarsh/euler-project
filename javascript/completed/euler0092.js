@@ -28,5 +28,3 @@ export function solve92() {
 
   return eightyNineCount;
 }
-
-solve92();
