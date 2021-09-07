@@ -77,6 +77,7 @@ import { solve83 } from './completed/euler0083.js';
 import { solve92 } from './completed/euler0092.js';
 import { solve97 } from './completed/euler0097.js';
 import { solve206 } from './working/euler0206.js';
+import { solve684 } from './working/euler0684.js';
 
 export const solutions = {
   1: solve1,
@@ -150,26 +151,24 @@ export const solutions = {
   69: solve69,
   70: solve70,
   71: solve71,
-  //
   // 72 => 78
-  //
   79: solve79,
   80: solve80,
   81: solve81,
   82: solve82,
   83: solve83,
-  //
   // 84 => 91
-  //
   92: solve92,
-  //
   // 93 => 96
-  //
   97: solve97,
   //
   // 98 -> 205
   //
   206: solve206,
+  //
+  // 207 => 683
+  //
+  684: solve684,
 };
 
 export function solve(n) {
