@@ -69,6 +69,7 @@ import { solve68 } from './completed/euler0068.js';
 import { solve69 } from './working/euler0069.js';
 import { solve70 } from './working/euler0070.js';
 import { solve71 } from './completed/euler0071.js';
+import { solve76 } from './completed/euler0076.js';
 import { solve79 } from './completed/euler0079.js';
 import { solve80 } from './working/euler0080.js';
 import { solve81 } from './completed/euler0081.js';
@@ -151,7 +152,13 @@ export const solutions = {
   69: solve69,
   70: solve70,
   71: solve71,
-  // 72 => 78
+  // 72, solve72,
+  // 73, solve73,
+  // 74, solve74,
+  // 75, solve75,
+  76: solve76,
+  // 77, solve77,
+  // 78, solve78,
   79: solve79,
   80: solve80,
   81: solve81,
