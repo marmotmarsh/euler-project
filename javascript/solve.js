@@ -75,7 +75,7 @@ import { solve80 } from './working/euler0080.js';
 import { solve81 } from './completed/euler0081.js';
 import { solve82 } from './completed/euler0082.js';
 import { solve83 } from './completed/euler0083.js';
-import { solve84 } from './working/euler0084.js';
+import { solve84 } from './completed/euler0084.js';
 import { solve92 } from './completed/euler0092.js';
 import { solve97 } from './completed/euler0097.js';
 import { solve206 } from './working/euler0206.js';

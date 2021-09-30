@@ -263,6 +263,7 @@ function takeSingleTurn(gs) {
 
 export function solve84() {
   const dieSize = 4;
+  // A million rolls should be roughly enough
   const turnsToTake = 10000000;
   let spaceCounts = _.clone(PROBABILITIES);
 
@@ -283,12 +284,12 @@ export function solve84() {
     spaceCounts[key] /= turnsToTake;
   }
 
-  console.log('Final Probs:', _.sum(Object.values(spaceCounts)));
+  // console.log('Final Probs:', _.sum(Object.values(spaceCounts)));
 
-  console.log(spaceCounts);
+  // console.log(spaceCounts);
 
   return _.toPairs(spaceCounts)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
+    .slice(0)
     .reduce((str, pr) => str + PROPERTY_ORDS[pr[0]], '');
 }
