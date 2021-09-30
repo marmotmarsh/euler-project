@@ -228,18 +228,17 @@ function takeSingleTurn(gs) {
   const d1 = _.random(1, gs.dieSize, false);
   const d2 = _.random(1, gs.dieSize, false);
 
-  // If we roll doubles
-  // Not sure why, this problem accounts for this in the description, but the solution does not seem to
-
-  // if (d1 === d2) {
-  //   if (gs.consecutiveDoubles >= 2) {
-  //     gs.consecutiveDoubles = 0;
-  //     gs.currentSpace = 10;
-  //     gs.spaceCounts.JAIL += 1;
-  //     return;
-  //   }
-  //   gs.consecutiveDoubles += 1;
-  // }
+  if (d1 === d2) {
+    if (gs.consecutiveDoubles >= 2) {
+      gs.consecutiveDoubles = 0;
+      gs.currentSpace = 10;
+      gs.spaceCounts.JAIL += 1;
+      return;
+    }
+    gs.consecutiveDoubles += 1;
+  } else {
+    gs.consecutiveDoubles = 0;
+  }
 
   gs.currentSpace += d1 + d2;
   gs.currentSpace %= 40;
@@ -290,6 +289,6 @@ export function solve84() {
 
   return _.toPairs(spaceCounts)
     .sort((a, b) => b[1] - a[1])
-    .slice(0)
+    .slice(0, 3)
     .reduce((str, pr) => str + PROPERTY_ORDS[pr[0]], '');
 }
