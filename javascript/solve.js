@@ -69,6 +69,7 @@ import { solve68 } from './completed/euler0068.js';
 import { solve69 } from './working/euler0069.js';
 import { solve70 } from './working/euler0070.js';
 import { solve71 } from './completed/euler0071.js';
+import { solve74 } from './completed/euler0074.js';
 import { solve76 } from './completed/euler0076.js';
 import { solve79 } from './completed/euler0079.js';
 import { solve80 } from './working/euler0080.js';
@@ -78,6 +79,7 @@ import { solve83 } from './completed/euler0083.js';
 import { solve84 } from './completed/euler0084.js';
 import { solve92 } from './completed/euler0092.js';
 import { solve97 } from './completed/euler0097.js';
+import { solve99 } from './working/euler0099.js';
 import { solve109 } from './completed/euler0109.js';
 import { solve145 } from './working/euler0145.js';
 import { solve206 } from './working/euler0206.js';
@@ -157,7 +159,7 @@ export const solutions = {
   71: solve71,
   // 72
   // 73
-  // 74
+  74: solve74,
   // 75
   76: solve76,
   // 77
@@ -181,8 +183,10 @@ export const solutions = {
   // 95
   // 96
   97: solve97,
+  // 98
+  99: solve99,
   //
-  // 98 -> 108
+  // 100 -> 108
   //
   109: solve109,
   //
