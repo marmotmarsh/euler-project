@@ -6,6 +6,7 @@
     "promise.timeout": "^0.4.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.25",
     "@types/node": "^22.20.3",
     "babel-eslint": "^10.1.0"
   }

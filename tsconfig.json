@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "types": ["node"]
+    "types": ["node"],
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   }
 }
