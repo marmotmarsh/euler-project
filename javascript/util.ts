@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 export function isPrime(num: number): boolean {
     // Numbers less than or equal to 1 are not prime
     if (num <= 1) return false;
@@ -17,4 +19,22 @@ export function isPrime(num: number): boolean {
     }
 
     return true;
+}
+
+export function getProperDivisors(n: number): number[] {
+    if (n <= 1) {
+        return [];
+    }
+    if (isPrime(n)) {
+        return [1];
+    }
+
+    let nums: number[] = [1];
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i == 0) {
+            nums.push(...(i == n/i ? [i] : [i, n/i]));
+        }
+    }
+
+    return nums.toSorted();
 }
