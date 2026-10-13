@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 import _ from 'lodash';
 
 export function isPrime(num: number): boolean {
@@ -37,4 +39,22 @@ export function getProperDivisors(n: number): number[] {
     }
 
     return nums.toSorted();
+}
+
+export function readCsvAsArray(filename: string): number[][] {
+    return fs
+        .readFileSync(filename, 'utf-8')
+        .trim()
+        .split(/\r?\n/)
+        .filter((line: string) => line.length > 0)
+        .map((line: string) => line.split(',').map(Number));
+}
+
+export function readTxtAsLines(filename: string): string[] {
+    return fs
+        .readFileSync(filename, 'utf-8')
+        .trim()
+        .split(/\r?\n/)
+        .filter((line: string) => line.length > 0);
+        // .map((line: string) => line.split(',').map(Number));
 }
