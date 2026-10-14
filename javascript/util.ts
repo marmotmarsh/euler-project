@@ -1,6 +1,24 @@
 import * as fs from 'fs';
-
 import _ from 'lodash';
+
+export function getPrimeDivisors(num: number): number[] {
+    let divs = [];
+
+    if (num == 1) {
+        return [num];
+    }
+    if (isPrime(num)) {
+        return [num];
+    }
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            return [i, ...getPrimeDivisors(num / i)];
+        }
+    }
+
+    return [num];
+}
 
 export function isPrime(num: number): boolean {
     // Numbers less than or equal to 1 are not prime
