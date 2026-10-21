@@ -76,3 +76,7 @@ export function readTxtAsLines(filename: string): string[] {
         .filter((line: string) => line.length > 0);
         // .map((line: string) => line.split(',').map(Number));
 }
+
+export function isNumber(number: string): boolean {
+    return new RegExp(/^\d+$/).test(number);
+}
