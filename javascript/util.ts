@@ -80,3 +80,11 @@ export function readTxtAsLines(filename: string): string[] {
 export function isNumber(number: string): boolean {
     return new RegExp(/^\d+$/).test(number);
 }
+
+export function quadraticFormula(a: number, b: number, c: number): number[] {
+    const topPlus = (-1 * b) + Math.sqrt((b * b) - (4 * a * c));
+    const topMinus = (-1 * b) - Math.sqrt((b * b) - (4 * a * c));
+    const bottom = 2 * a;
+
+    return [topPlus / bottom, topMinus / bottom];
+}
